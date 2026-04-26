@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Summertime Saga Mod Installation Guide — Android &amp; PC (2026)</title>
+<meta name="description" content="How to install mods for Summertime Saga on Android and PC. Fix mod conflicts, file placement errors, and version mismatches. Updated 2026.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://renpy-installation-docs.onrender.com/">
+<meta property="og:title" content="Summertime Saga Mod Installation Guide — Android & PC (2026)">
+<meta property="og:description" content="Step-by-step mod installation guide for Summertime Saga on Android and Windows PC. Fix errors fast.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://renpy-installation-docs.onrender.com/">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Summertime Saga Mod Installation Guide — Android & PC (2026)",
+  "description": "How to install mods for Summertime Saga on Android and PC, including troubleshooting common mod errors.",
+  "url": "https://renpy-installation-docs.onrender.com/",
+  "author": { "@type": "Person", "name": "Ryan Cole" },
+  "dateModified": "2026-03-01"
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Where do I put mod files for Summertime Saga on PC?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Mod files go inside the game folder under game/mods/. Create the mods folder if it does not exist. Never place mod files directly in the root game folder."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does Summertime Saga crash after installing a mod?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Crashes after mod installation are usually caused by a version mismatch between the mod and the game build. Check that your mod version matches your game version exactly."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I install mods on the Android version of Summertime Saga?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Android mods are typically pre-patched APK files. Download the modded APK, uninstall the vanilla version first, then install the modded APK using the standard Unknown Sources method."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I fix a mod conflict in Summertime Saga?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Remove all mods and add them back one at a time to identify which mod causes the conflict. Most conflicts occur when two mods modify the same game script file."
+      }
+    }
+  ]
+}
+</script>
+
+<style>
+  :root {
+    --purple: #6921D1;
+    --purple-glow: rgba(105,33,209,0.12);
+    --bg: #f9f9fc;
+    --surface: #ffffff;
+    --surface2: #f2f0fb;
+    --border: rgba(105,33,209,0.11);
+    --text: #18182e;
+    --muted: #626278;
+    --radius: 12px;
+    --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: var(--font); background: var(--bg); color: var(--text); line-height: 1.75; overflow-x: hidden; }
+  .topbar { height: 4px; background: linear-gradient(90deg, #6921D1, #a855f7, #6921D1); }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 52px 22px 80px; }
+  .breadcrumb { font-size: 12px; color: var(--muted); margin-bottom: 30px; display: flex; gap: 6px; align-items: center; }
+  .breadcrumb a { color: var(--purple); text-decoration: none; font-weight: 500; }
+  .hero { padding-bottom: 44px; border-bottom: 1px solid var(--border); margin-bottom: 44px; }
+  .hero-tag { display: inline-flex; align-items: center; gap: 6px; background: var(--surface2); border: 1px solid var(--border); color: var(--purple); font-size: 11px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; padding: 5px 13px; border-radius: 50px; margin-bottom: 18px; }
+  h1 { font-size: clamp(26px, 5vw, 44px); font-weight: 800; line-height: 1.15; margin-bottom: 16px; }
+  h1 em { font-style: normal; color: var(--purple); }
+  .hero-desc { max-width: 580px; color: var(--muted); font-size: 16px; margin-bottom: 24px; }
+  .hero-meta { display: flex; gap: 14px; flex-wrap: wrap; font-size: 12px; color: var(--muted); }
+  .hero-meta span { display: flex; align-items: center; gap: 5px; background: var(--surface2); border: 1px solid var(--border); padding: 4px 10px; border-radius: 50px; }
+  h2 { font-size: clamp(17px, 3vw, 22px); font-weight: 700; margin-bottom: 14px; display: flex; align-items: center; gap: 10px; }
+  .tag { font-size: 10px; font-weight: 600; background: var(--purple-glow); color: var(--purple); border: 1px solid var(--border); padding: 2px 9px; border-radius: 50px; letter-spacing: 1px; text-transform: uppercase; }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 28px 26px; margin-bottom: 20px; box-shadow: 0 2px 10px rgba(105,33,209,0.04); }
+  .card p { color: var(--muted); font-size: 15px; margin-bottom: 12px; }
+  .card p:last-child { margin-bottom: 0; }
+  .card a { color: var(--purple); font-weight: 600; text-decoration: none; }
+  .card a:hover { text-decoration: underline; }
+  .steps { list-style: none; counter-reset: s; padding: 0; margin-top: 14px; }
+  .steps li { counter-increment: s; display: flex; gap: 14px; margin-bottom: 13px; align-items: flex-start; }
+  .steps li::before { content: counter(s); flex-shrink: 0; width: 26px; height: 26px; border-radius: 50%; background: var(--purple); color: #fff; font-weight: 700; font-size: 13px; display: flex; align-items: center; justify-content: center; margin-top: 2px; }
+  .steps li p { margin: 0; font-size: 15px; color: var(--muted); }
+  .steps li strong { color: var(--text); }
+  code { background: var(--surface2); padding: 2px 8px; border-radius: 5px; font-size: 13px; font-family: "SF Mono", "Consolas", monospace; color: var(--purple); }
+  .error-table { margin-top: 14px; }
+  .error-row { display: grid; grid-template-columns: 1fr 1.5fr; gap: 12px; padding: 13px 0; border-bottom: 1px solid rgba(0,0,0,0.06); font-size: 14px; align-items: start; }
+  .error-row:last-child { border-bottom: none; }
+  .error-row .err { color: #dc2626; font-weight: 600; }
+  .error-row .fix { color: var(--muted); }
+  .alert { display: flex; gap: 10px; align-items: flex-start; background: #fffbeb; border: 1px solid #f59e0b44; border-left: 3px solid #f59e0b; border-radius: var(--radius); padding: 12px 14px; margin-top: 14px; font-size: 13px; color: #92400e; }
+  .faq-item { border-bottom: 1px solid var(--border); padding: 15px 0; }
+  .faq-item:last-child { border-bottom: none; }
+  .faq-q { font-weight: 600; font-size: 15px; color: var(--text); margin-bottom: 6px; display: flex; gap: 8px; align-items: flex-start; }
+  .faq-q::before { content: 'Q'; flex-shrink: 0; width: 22px; height: 22px; background: var(--purple); color: #fff; font-size: 11px; font-weight: 700; border-radius: 5px; display: flex; align-items: center; justify-content: center; margin-top: 1px; }
+  .faq-a { font-size: 14px; color: var(--muted); padding-left: 30px; }
+  .link-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 12px; margin-top: 16px; }
+  .link-btn { display: flex; align-items: center; gap: 12px; padding: 14px 16px; background: var(--surface2); border: 1px solid var(--border); border-radius: var(--radius); text-decoration: none; color: var(--text); font-weight: 600; font-size: 14px; transition: all 0.2s; }
+  .link-btn:hover { background: var(--purple-glow); border-color: rgba(105,33,209,0.3); transform: translateY(-2px); }
+  .link-btn .ico { width: 34px; height: 34px; border-radius: 8px; background: var(--purple-glow); border: 1px solid var(--border); display: flex; align-items: center; justify-content: center; color: var(--purple); flex-shrink: 0; }
+  .link-btn .lbl small { display: block; font-weight: 400; font-size: 11px; color: var(--muted); margin-top: 1px; }
+  footer { margin-top: 52px; padding-top: 22px; border-top: 1px solid var(--border); text-align: center; font-size: 13px; color: var(--muted); }
+  footer a { color: var(--purple); text-decoration: none; font-weight: 600; }
+  .footer-links { display: flex; justify-content: center; gap: 18px; flex-wrap: wrap; margin-top: 12px; }
+  @media (max-width: 520px) { .wrap { padding: 32px 16px 56px; } .error-row { grid-template-columns: 1fr; } .link-grid { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<div class="topbar"></div>
+<div class="wrap">
+
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="https://renpy-installation-docs.onrender.com/">Home</a>
+    <span>›</span>
+    <span>Mod Installation Guide</span>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-tag">🔧 Mod Guide · Updated 2026</div>
+    <h1>Summertime Saga<br><em>Mod Installation</em> Guide</h1>
+    <p class="hero-desc">Install mods correctly on Android and PC. Fix conflicts, version mismatches, and file placement errors before they break your save.</p>
+    <div class="hero-meta">
+      <span>✍️ By Ryan Cole</span>
+      <span>🕒 Updated March 2026</span>
+      <span>📱 Android &amp; PC</span>
+      <span>⏱ 7 min read</span>
+    </div>
+  </header>
+
+  <main>
+
+    <div class="card">
+      <h2>Before Installing Any Mod <span class="tag">Important</span></h2>
+      <p>Mods modify core game files. Taking a few precautions first prevents hours of troubleshooting later.</p>
+      <ol class="steps">
+        <li><p><strong>Back up your save files</strong> — On PC these are in <code>%appdata%/RenPy/SummertimeSaga</code>. Copy this folder somewhere safe before making any changes.</p></li>
+        <li><p><strong>Match mod version to game version</strong> — Every mod specifies which game version it supports. Using the wrong version is the leading cause of crashes and black screens.</p></li>
+        <li><p><strong>Install one mod at a time</strong> — Add mods one by one and test after each. This makes conflicts easy to identify and remove.</p></li>
+        <li><p><strong>Download from verified sources</strong> — Only use mods linked from trusted fan sites. Modified APKs from unknown sources can contain harmful software.</p></li>
+      </ol>
+      <div class="alert">⚠️ <span>Always start a <strong>new save slot</strong> after installing mods. Loading an existing save with incompatible mods active frequently causes corruption.</span></div>
+    </div>
+
+    <div class="card">
+      <h2>Installing Mods on Windows PC</h2>
+      <p>PC mod installation uses the Ren'Py mod folder structure. Follow these steps exactly to avoid file placement errors.</p>
+      <ol class="steps">
+        <li><p><strong>Download the mod</strong> — Get the correct version from a trusted source. The mod file will be a <code>.zip</code> or <code>.rpa</code> file.</p></li>
+        <li><p><strong>Navigate to your game folder</strong> — Open the Summertime Saga directory you extracted when installing the game.</p></li>
+        <li><p><strong>Open the game subfolder</strong> — Inside the main game directory, find the <code>game/</code> folder. Create a <code>mods/</code> folder inside it if one does not exist.</p></li>
+        <li><p><strong>Place mod files</strong> — Copy the <code>.rpa</code> mod file into <code>game/mods/</code>. Never place mod files in the root game folder.</p></li>
+        <li><p><strong>Launch and verify</strong> — Start the game. The mod should load automatically. Check the mod menu if one is provided.</p></li>
+      </ol>
+      <p>For a fully illustrated walkthrough of the PC mod folder structure, see the <a href="https://summersagahub.com/install-summertime-saga-mod-pc/">PC mod install guide at summersagahub.com</a>.</p>
+    </div>
+
+    <div class="card">
+      <h2>Installing Mods on Android</h2>
+      <p>Android mods for Summertime Saga are distributed as pre-patched APK files rather than separate mod files.</p>
+      <ol class="steps">
+        <li><p><strong>Uninstall the vanilla version</strong> — The standard APK and modded APK share the same package ID. You must remove the original before installing the modded version.</p></li>
+        <li><p><strong>Back up your save</strong> — Android saves are stored in the app data folder. Use a file manager to copy the save folder before uninstalling.</p></li>
+        <li><p><strong>Download the modded APK</strong> — Get the correct modded APK version from a verified source. Check that it matches your previous game version.</p></li>
+        <li><p><strong>Enable Unknown Sources</strong> — Go to Settings → Security → enable Unknown Sources or grant permission to your file manager app.</p></li>
+        <li><p><strong>Install the modded APK</strong> — Tap the APK file and confirm installation. Restore your save files if needed after the first launch.</p></li>
+      </ol>
+    </div>
+
+    <div class="card">
+      <h2>Common Mod Errors &amp; Fixes</h2>
+      <div class="error-table">
+        <div class="error-row">
+          <div class="err">⚠ Game crashes on launch</div>
+          <div class="fix">Version mismatch. Check the mod page for the exact game version it supports and match it.</div>
+        </div>
+        <div class="error-row">
+          <div class="err">⚠ Mod not loading</div>
+          <div class="fix">File placed in wrong folder. Confirm the .rpa file is inside <code>game/mods/</code> not the root folder.</div>
+        </div>
+        <div class="error-row">
+          <div class="err">⚠ Black screen after mod</div>
+          <div class="fix">Remove the mod, clear game cache, and reinstall. Then add the mod back using the correct folder path.</div>
+        </div>
+        <div class="error-row">
+          <div class="err">⚠ Mod conflict</div>
+          <div class="fix">Remove all mods and add back one at a time. Two mods editing the same script file will always conflict.</div>
+        </div>
+        <div class="error-row">
+          <div class="err">⚠ Save file corrupt</div>
+          <div class="fix">Restore from your pre-mod backup. Always back up saves before installing or removing mods.</div>
+        </div>
+      </div>
+      <p style="margin-top:14px;">More error fixes are documented in the <a href="https://summersagahub.com/summertime-saga-mod-errors-fix/">mod error fix guide at summersagahub.com</a>.</p>
+    </div>
+
+    <div class="card">
+      <h2>Related Guides</h2>
+      <div class="link-grid">
+        <a class="link-btn" href="https://summersagahub.com/install-summertime-saga-mod-pc/" rel="noopener">
+          <div class="ico">
+            <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+          </div>
+          <div class="lbl">PC Mod Guide<small>Full illustrated walkthrough</small></div>
+        </a>
+        <a class="link-btn" href="https://summersagahub.com/summertime-saga-mod-errors-fix/" rel="noopener">
+          <div class="ico">
+            <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+          </div>
+          <div class="lbl">Mod Error Fixes<small>All known mod issues</small></div>
+        </a>
+        <a class="link-btn" href="https://summersagahub.com/how-to-install-summertime-saga/" rel="noopener">
+          <div class="ico">
+            <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          </div>
+          <div class="lbl">Base Install Guide<small>Install without mods first</small></div>
+        </a>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq-item">
+        <div class="faq-q">Where do I put mod files on PC?</div>
+        <div class="faq-a">Mod files go inside the game folder under <code>game/mods/</code>. Create the mods folder if it does not exist. Never place mod files directly in the root game directory.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Why does the game crash after installing a mod?</div>
+        <div class="faq-a">Crashes after mod installation are almost always caused by a version mismatch. Check that your mod version exactly matches your game build version.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Can I install mods on Android?</div>
+        <div class="faq-a">Yes. Android mods come as pre-patched APK files. Uninstall the original game first, then install the modded APK using the standard Unknown Sources method.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">How do I fix a mod conflict?</div>
+        <div class="faq-a">Remove all mods and add them back one at a time. Most conflicts happen when two mods edit the same game script file — identify which pair causes the conflict and remove one.</div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    <p>Full mod guides &amp; error fixes at <a href="https://summersagahub.com/">summersagahub.com</a></p>
+    <div class="footer-links">
+      <a href="https://summersagahub.com/install-summertime-saga-mod-pc/">PC Mod Guide</a>
+      <a href="https://summersagahub.com/summertime-saga-mod-errors-fix/">Mod Error Fixes</a>
+      <a href="https://summersagahub.com/how-to-install-summertime-saga/">Install Guide</a>
+    </div>
+    <p style="margin-top:14px;font-size:12px;">Summertime Saga Mod Guide · Updated 2026 · Written by Ryan Cole</p>
+  </footer>
+
+</div>
+</body>
+</html>
